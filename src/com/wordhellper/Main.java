@@ -16,7 +16,9 @@ public class Main {
 //            System.out.println("");
 //        }
         for (String s: field.getWords(2,2)){
-            System.out.println(s);
+            if (Request.validate(s)) {
+                System.out.println(s);
+            }
         }
 
 
