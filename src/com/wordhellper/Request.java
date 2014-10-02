@@ -16,10 +16,6 @@ public class Request {
             url = new URL(urlToRead);
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
-//            conn.setRequestProperty("callback","ya_.json.c(12)");
-//            conn.setRequestProperty("lang", "en-ru");
-//            conn.setRequestProperty("text", "hello");
-//            conn.setRequestProperty("sid", "546092b1");
             rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             while ((line = rd.readLine()) != null) {
                 result += line;
