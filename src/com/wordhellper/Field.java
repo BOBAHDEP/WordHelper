@@ -27,40 +27,19 @@ public class Field {
                     }
                 }
             }
-            print();
+            for (int i = 0; i < FIELD_SIZE; i++) {
+                for (int j = 0; j < FIELD_SIZE; j++) {
+                    System.out.print(res[i][j].getLetter());
+                }
+                System.out.println();
+            }
             System.out.println("Matrix is OK? (y/n)");
             letter = sc.next().charAt(0);
             if (letter == 'y'){
+                this.points = res;
                 return;
             }
         }
-//        res[0][0] = new Point('q',0,0);
-//        res[0][1] = new Point('w',0,1);
-//        res[0][2] = new Point('e',0,2);
-//        res[0][3] = new Point('r',0,3);
-//        res[0][4] = new Point('t',0,4);
-//        res[1][0] = new Point('y',1,0);
-//        res[1][1] = new Point('u',1,1);
-//        res[1][2] = new Point('i',1,2);
-//        res[1][3] = new Point('o',1,3);
-//        res[1][4] = new Point('p',1,4);
-//        res[2][0] = new Point('a',2,0);
-//        res[2][1] = new Point('s',2,1);
-//        res[2][2] = new Point('d',2,2);
-//        res[2][3] = new Point('f',2,3);
-//        res[2][4] = new Point('g',2,4);
-//        res[3][0] = new Point('h',3,0);
-//        res[3][1] = new Point('j',3,1);
-//        res[3][2] = new Point('k',3,2);
-//        res[3][3] = new Point('l',3,3);
-//        res[3][4] = new Point('a',3,4);
-//        res[4][0] = new Point('z',4,0);
-//        res[4][1] = new Point('x',4,1);
-//        res[4][2] = new Point('c',4,2);
-//        res[4][3] = new Point('v',4,3);
-//        res[4][4] = new Point('b',4,4);
-//
-//        this.points = res;
     }
 
     public void print(){
